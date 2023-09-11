@@ -1,9 +1,12 @@
 public class Reduce {
     public static void main(String[] args) {
         int n = 100;
-        while (n >= 0) {
+        int counter = 0;
+        while (n > 0) {
             n = reduce(n);
+            counter ++;
         }
+        System.out.println(counter);
     }
 
     private static int reduce(int n) {
